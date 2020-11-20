@@ -2,13 +2,14 @@
   "expo": {
     "name": "TourGuideApp",
     "slug": "TourGuideApp",
+    "description": "A great app where you can find the places you want to visit!",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./app/assets/images/places.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./app/assets/images/splash_icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#171717"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -17,16 +18,26 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.mohdsameer7408.tour-guide-app",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
     },
     "android": {
+      "package": "com.mohdsameer7408.tour_guide_app",
+      "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "foregroundImage": "./app/assets/images/places-adaptive.png",
+        "backgroundColor": "#171717"
+      },
+      "permissions": ["ACCESS_FINE_LOCATION", "CAMERA", "WRITE_EXTERNAL_STORAGE"],
+      "config": {
+        "googleMaps": {
+        "apiKey": "AIzaSyA3kg7YWugGl1lTXmAmaBGPNhDW9pEh5bo"
+      }
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./app/assets/images/favicon.png"
     }
   }
 }
